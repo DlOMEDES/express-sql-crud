@@ -7,23 +7,63 @@
     <link rel="stylesheet" href="/output.css" />
   </head>
   <body>
-    <header class="bg-slate-300 flex items-center justify-between p-2">
-      <h1 class="text-xl font-bold text-slate-500">
-        <span class="text-green-600">JS</span>CRUD
-      </h1>
-      <nav class="">
-        <ul>
+    <nav class="bg-emerald-100">
+      <div class="px-8 py-4 sm:flex items-center gap-x-16">
+        <h2 class="text-4xl">
+          JS<span class="text-xl text-emerald-600">CRUD</span>
+        </h2>
+        <ul class="flex gap-x-4 tracking-wide text-lg">
           <li>
-            <a
-              class="bg-slate-700 text-white w-max py-2 px-4 font-bold text-xl"
-              href="/login"
-              >Login</a
-            >
+            <a href="/homepage">Home</a>
+          </li>
+          <li>
+            <a href="/about">About</a>
+          </li>
+          <li>
+            <a href="/blog">Blog</a>
+          </li>
+          <li>
+            <a href="/contact">Contact</a>
           </li>
         </ul>
-      </nav>
-    </header>
+      </div>
+    </nav>
 
-    <main class="grid grid-cols-8"></main>
+    <main>
+      <section
+        class="sm:py-0 px-8 py-24 bg-emerald-100 sm:flex sm:items-center"
+      >
+        <article class="sm:mx-auto sm:w-1/2 sm:max-w-xl max-w-xs">
+          <h1 class="text-4xl sm:text-7xl font-bold tracking-wider">
+            I'm Diomedes
+            <span class="text-2xl sm:text-4xl text-slate-700"
+              >Front-End Developer</span
+            >
+          </h1>
+          <p class="sm:text-xl mt-2 tracking-wide text-slate-700">
+            Digitizing ideas into functional products
+          </p>
+          <div class="mt-4">
+            <a class="bg-slate-500 bold uppercase text-white p-2" href="/github"
+              >Git</a
+            >
+            <a
+              class="bg-slate-500 bold uppercase text-white p-2"
+              href="/linkedin"
+              >In</a
+            >
+            <a
+              class="bg-slate-500 bold uppercase text-white p-2"
+              href="/twitter"
+              >Twit</a
+            >
+          </div>
+        </article>
+
+        <article class="sm:w-1/2">
+          <img src="/images/coding-5-61.png" alt="" />
+        </article>
+      </section>
+    </main>
   </body>
 </html>
