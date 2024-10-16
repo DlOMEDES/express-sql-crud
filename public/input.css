@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@media only screen and (min-width: 640px) {
+  .grid-container {
+    display: grid;
+
+    /* grid-template-rows: 55vh auto 50vh auto; */
+    grid-template-columns:
+      minmax(2rem, 1fr)
+      repeat(8, minmax(min-content, 160px))
+      minmax(2rem, 1fr);
+  }
+}

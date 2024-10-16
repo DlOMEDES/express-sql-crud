@@ -6,64 +6,21 @@
     <title>Document</title>
     <link rel="stylesheet" href="/output.css" />
   </head>
-  <body>
-    <nav class="bg-emerald-100">
-      <div class="px-8 py-4 sm:flex items-center gap-x-16">
-        <h2 class="text-4xl">
-          JS<span class="text-xl text-emerald-600">CRUD</span>
-        </h2>
-        <ul class="flex gap-x-4 tracking-wide text-lg">
-          <li>
-            <a href="/homepage">Home</a>
-          </li>
-          <li>
-            <a href="/about">About</a>
-          </li>
-          <li>
-            <a href="/blog">Blog</a>
-          </li>
-          <li>
-            <a href="/contact">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+  <body class="grid-container">
+    <header class="bg-emerald-100 grid-container col-[1/-1]">
+      <a href="/" class="col-start-2">Logo</a>
+      <nav class="col-start-9 text-right">
+        <a href="/">Btn</a>
+      </nav>
+    </header>
 
-    <main>
-      <section
-        class="sm:py-0 px-8 py-24 bg-emerald-100 sm:flex sm:items-center"
-      >
-        <article class="sm:mx-auto sm:w-1/2 sm:max-w-xl max-w-xs">
-          <h1 class="text-4xl sm:text-7xl font-bold tracking-wider">
-            I'm Diomedes
-            <span class="text-2xl sm:text-4xl text-slate-700"
-              >Front-End Developer</span
-            >
-          </h1>
-          <p class="sm:text-xl mt-2 tracking-wide text-slate-700">
-            Digitizing ideas into functional products
-          </p>
-          <div class="mt-4">
-            <a class="bg-slate-500 bold uppercase text-white p-2" href="/github"
-              >Git</a
-            >
-            <a
-              class="bg-slate-500 bold uppercase text-white p-2"
-              href="/linkedin"
-              >In</a
-            >
-            <a
-              class="bg-slate-500 bold uppercase text-white p-2"
-              href="/twitter"
-              >Twit</a
-            >
-          </div>
-        </article>
+    <section class="bg-teal-500 col-[1/-1] grid-container">
+      <h1 class="flex flex-col col-[2/6]">
+        BANNER Diomedes <span>Front-end Developer</span>
+      </h1>
+      <img src="/public/images/coding-5-61.png" alt="" />
+    </section>
 
-        <article class="sm:w-1/2">
-          <img src="/images/coding-5-61.png" alt="" />
-        </article>
-      </section>
-    </main>
+    <section class="bg-teal-200 col-[2/10]">skils</section>
   </body>
 </html>
